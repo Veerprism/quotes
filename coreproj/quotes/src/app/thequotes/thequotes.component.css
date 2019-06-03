@@ -1,0 +1,97 @@
+@import url('https://db.onlinewebfonts.com/c/62fe74137dcadfecac5ad095cc7c78f9?family=ITC+Souvenir');
+@font-face {font-family: "ITC Souvenir";
+  src: url("//db.onlinewebfonts.com/t/62fe74137dcadfecac5ad095cc7c78f9.eot");
+  src: url("//db.onlinewebfonts.com/t/62fe74137dcadfecac5ad095cc7c78f9.eot?#iefix") format("embedded-opentype"),
+  url("//db.onlinewebfonts.com/t/62fe74137dcadfecac5ad095cc7c78f9.woff2") format("woff2"),
+  url("//db.onlinewebfonts.com/t/62fe74137dcadfecac5ad095cc7c78f9.woff") format("woff"),
+  url("//db.onlinewebfonts.com/t/62fe74137dcadfecac5ad095cc7c78f9.ttf") format("truetype"),
+  url("//db.onlinewebfonts.com/t/62fe74137dcadfecac5ad095cc7c78f9.svg#ITC Souvenir") format("svg");
+}
+body{
+  overflow: hidden;
+  margin-top:25px;
+  justify-content: center;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+.overall{
+
+
+}
+.lists{
+  justify-content: left;
+}
+.listing{
+  justify-content: left;
+
+}
+#thumbup{
+
+  font-size:100%;
+  color:blue;
+  float: left;
+  margin-top: 8px;
+  margin-right: 15px;
+  height: 25px;
+}
+#thumbup:hover{
+  cursor: pointer;
+  color: #FF0015;
+
+}
+#thumbdown:hover{
+  cursor: pointer;
+  color: black;
+  width: 25px;
+}
+
+
+#thumbdown{
+  color: skyblue;
+  float: left;
+  font-size:100%;
+  margin-top: 8px;
+  width: 25px;
+  margin-left: 15px;
+  height: 25px;
+}
+.rating{
+  display: inline-block;
+  font-size:100%;
+
+}
+#content{
+  font-style: italic;
+
+  font-family: 'Lora', serif;
+
+
+}
+.people{
+  font-weight: bold;
+  font-size: smaller;
+}
+.lists{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Lora', serif;
+
+}
+.digits{
+  color: black;
+  font-size: 100%;
+  float: left;
+
+  height: 25px;
+  padding-bottom: 15px;
+}
+.remove{
+
+
+  margin-left: 500px;
+}
+

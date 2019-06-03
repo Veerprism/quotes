@@ -1,0 +1,52 @@
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.7.1/angular-material-icons.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://db.onlinewebfonts.com/c/62fe74137dcadfecac5ad095cc7c78f9?family=ITC+Souvenir" rel="stylesheet" type="text/css" >
+<link href="https://fonts.googleapis.com/css?family=Domine|Libre+Baskerville|Noto+Serif|Playfair+Display&display=swap" rel="stylesheet">
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+
+
+
+      <div class="lists"  *ngFor="let user of users;let i=index">
+        <ul class="list-group listing" >
+          <li id="content" class=""><span>"</span>{{users[i].content}}<span>"</span><span class="people"> - {{users[i].author}}</span></li><br>
+          <li id="user" class="">Made by: <span class="people">{{users[i].user}}</span></li>
+
+          <div class="rating">
+            <span ><i (click)="upvote(i)"  #digits class="material-icons" id="thumbup">thumb_up</i><span class="digits">{{users[i].upvote}}</span></span>
+
+            <span><i (click)="downvote(i)" class="material-icons" id="thumbdown">thumb_down</i><span class="digits">{{users[i].downvote}}</span></span>
+            <button class="btn btn-primary remove" (click)="delete(i)">Remove</button>
+          </div>
+          <span ></span>
+          <hr>
+        </ul>
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+    </div>
+
+  </div>
+<router-outlet></router-outlet>
+<!--  <div  *ngFor="let user of users;let i=index">-->
+<!--    <ul class="list-group" >-->
+<!--      <li id="content">{{users[i].content}}</li><br>-->
+<!--      <li id="user">{{users[i].user}}</li><br>-->
+<!--      <li id="author">{{users[i].author}}</li>-->
+<!--      <i (click)="upvote(i)" class="material-icons" id="thumbup">thumb_up</i>-->
+<!--      <i (click)="downvote(i)" class="material-icons" id="thumbdown">thumb_down</i><hr>-->
+
+<!--    </ul>-->
+
+<!--  </div>-->
+

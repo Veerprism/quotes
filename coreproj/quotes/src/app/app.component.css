@@ -1,0 +1,64 @@
+/*!*fonts{*!*/
+/*!*  font-family: 'Playfair Display', serif;*!*/
+/*!*  font-family: 'Libre Baskerville', serif;*!*/
+/*!*  font-family: 'Noto Serif', serif;*!*/
+/*!*  font-family: 'Domine', serif;*!*/
+/*!*}*!*/
+/*.overall{*/
+/*  font-family: 'Noto Sans SC', sans-serif;*/
+/*  justify-content: center;*/
+/* width:500px;*/
+/*  margin: 0 auto;*/
+
+/*}*/
+/*h3{*/
+/*  font-family: 'Lora', serif;*/
+/*}*/
+/*.submit:hover{*/
+/*  background-color:black;*/
+/*  color: ghostwhite;*/
+/*}*/
+/*.heading{*/
+/*  justify-content: left;*/
+/*  float: left;*/
+/*  text-align: left;*/
+/*  margin-left: 0px;*/
+/*  width:500px;*/
+/*}*/
+/*input.ng-invalid{*/
+/*  border-color: red;*/
+/*  border-style: solid;*/
+/*  border-width:thin;*/
+/*  font-family: 'Playfair Display', serif;*/
+
+/*}*/
+/*label{*/
+/*  font-size: 90%;*/
+
+/*}*/
+/*input.ng-untouched.ng-invalid{*/
+/*  border-color:grey;*/
+/*  font-family: 'Playfair Display', serif;*/
+/*}*/
+/*.help{*/
+/*  font-family: 'Playfair Display', serif;*/
+/*  color: red;*/
+/*}*/
+/*#thumbup{*/
+
+
+/*  color:orangered;*/
+/*}*/
+/*#thumbup:hover{*/
+/*  cursor: pointer;*/
+/*  color: #FF0015;*/
+/*}*/
+/*#thumbdown:hover{*/
+/*  cursor: pointer;*/
+/*  color: black;*/
+/*}*/
+
+
+/*#thumbdown{*/
+/*  color: skyblue;*/
+/*}*/

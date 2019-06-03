@@ -1,0 +1,68 @@
+
+<router-outlet></router-outlet>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.7.1/angular-material-icons.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Domine|Libre+Baskerville|Noto+Serif|Playfair+Display&display=swap"
+      rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC&display=swap" rel="stylesheet">
+
+
+<link href="https://db.onlinewebfonts.com/c/62fe74137dcadfecac5ad095cc7c78f9?family=ITC+Souvenir" rel="stylesheet" type="text/css" >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="container-fluid overall">
+  <div class="row overall">
+    <div class="heading">
+      <ul class="nav nav-tabs">
+        <li class="navbar-brand">Quotify</li>
+        <li role="presentation" class="active nav-item"><a class="nav-link">Home</a></li>
+        <li role="presentation" class="nav-item" ><a class="nav-link" >Quotes</a></li>
+        <li role="presentation" class="nav-item" ><a class="nav-link">About</a></li>
+      </ul>
+    </div>
+    <div class="col-md-12">
+      <form  (ngSubmit)="submitted(forms,user, quote.value,username.value,authorinput.value);forms.resetForm()" #forms="ngForm">
+
+        <!--        Input for the actual quote-->
+        <h3>Quotify</h3>
+        <div class="form-group" ngModelGroup="actualquote">
+          <label for="quotearea" >Enter Quote</label>
+          <textarea id="quotearea" class="form-control" type="text" ngModel #quote name="quoteinput"></textarea><br>
+        </div>
+
+        <div ngModelGroup="actualpeople">
+          <!--          Input for person entering the data-->
+          <div class="form-group">
+            <label for="username">Your Name</label>
+            <input type="text" id="username" name="username"  class="form-control" #user="ngModel" ngModel required="" #username><br>
+            <span class="help-block help" *ngIf="!usernameValid && !user.valid" [ngStyle]="{ 'backgroundColor':red }">Please enter your name</span>
+          </div>
+          <!--          Input for source of quote -->
+          <div class="form-group">
+            <label for="authorinput">The Source</label>
+            <input type="text" ngModel id="authorinput" class="form-control" name="authorinput" #authorinput><br>
+          </div>
+
+        </div>
+
+
+
+        <input  class="btn btn-dark submit" type="submit" value="Show Quote">
+
+
+
+
+
+
+
+
+
+
+      </form>
+
+    </div>
+  </div>
+  <app-thequotes [parentCount]="count" [quotat]="titles" [username]="usernameValid" [users]="userdata"></app-thequotes>
+</div>
+<router-outlet></router-outlet>
