@@ -9,13 +9,14 @@ Users can input quotes and they are displayed in an orderes manner. A person can
 ## Setup/Installation Requirements
 1.Modern Browser which is Javascript Enabled
 2.PC or any electronic device with internet connection
+
 ## Known Bugs
 No bugs so far. Working clean. Except for user login and database which I plan to implement on future releases.
 ## Technologies Used
 HTML5,CSS and Javascript
 Framework - Angular 
 ## Support and contact details
-You can contact me via:
+Contact:
 Email:jkmigiro@gmail.com
 Mobile number:0724036732
 
