@@ -6,7 +6,7 @@ import { Directive,ElementRef } from '@angular/core';
 export class BestquoteDirective {
 
   constructor(private el: ElementRef) {
-    el.nativeElement.style.backgroundColor = "gray";
+    el.nativeElement.style.backgroundColor = "#97befc";
   }
 
 }
