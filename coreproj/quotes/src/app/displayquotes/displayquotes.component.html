@@ -1,0 +1,60 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=EB+Garamond|Libre+Baskerville|Lora|Playfair+Display|Source+Serif+Pro&display=swap"
+      rel="stylesheet">
+<div class="container-fluid whole">
+  <div class="row">
+    <div class="col-md-12 col-xl-12 col-sm-12 ">
+      <div class="display" *ngFor="let user of users;let i=index">
+        <ul class="userslist">
+          <li #contentr id="contentr" [ngStyle]="(users[i].totalvote == maximum) && {'background-color':'#bfceff'}"><span >"</span>{{users[i].content}}<span>" -</span><span class="people">{{users[i].author}}</span></li>
+          <div class="humans">
+            <li>By: <span class="people">{{users[i].user}}</span></li>
+            <li>Date: <span class="people">{{users[i].dateentered}}</span></li>
+          </div>
+
+          <li>
+            <div class="rating">
+              <!--            <i id="thumbup" (click)="upvote(i)" class="material-icons">thumb_up</i><span><p>{{users[i].upvote}}</p></span>-->
+              <!--            <i id="thumbdown" (click)="downvote(i)" class="material-icons">thumb_down</i><span><p>{{users[i].downvote}}</p></span>-->
+
+
+              <div class="votes">
+
+                <p class="thumb"><i id="thumbup" (click)="upvote(i)"  class="material-icons">thumb_up</i><span class="vote1">{{users[i].upvote}}</span></p>
+                <p class="thumb"><i id="thumbdown" (click)="downvote(i)" class="material-icons">thumb_down</i><span clas="vote1">{{users[i].downvote}}</span><span></span></p>
+                <button class="btn btn-danger delete" (click)="remove(i)">Remove</button>
+
+              </div>
+
+
+            </div>
+
+          </li>
+
+
+
+
+
+
+<!--          <div class="warning">-->
+<!--            <i id="thumbup" (click)="upvote(i)" class="material-icons">thumb_up</i><span><p>{{users[i].upvote}}</p></span>-->
+<!--            <i id="thumbdown" (click)="downvote(i)" class="material-icons">thumb_down</i><span><p>{{users[i].downvote}}</p></span>-->
+<!--          </div>-->
+
+        </ul>
+
+        <div>
+
+        </div>
+
+        <br>
+        <br>
+
+        <hr>
+      </div>
+
+
+    </div>
+
+  </div>
+</div>
