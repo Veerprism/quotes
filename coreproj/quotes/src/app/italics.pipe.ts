@@ -1,6 +1,6 @@
 import {Pipe, PipeTransform} from '@angular/core';
 @Pipe({
-  name: 'italics'
+  name: 'Italics'
 })
 export class ItalicsPipe implements PipeTransform{
   transform(value: any){
