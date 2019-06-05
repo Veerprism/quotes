@@ -19,7 +19,7 @@ export class ThequotesComponent implements OnInit {
   @Input() quotat: number;
   @Input() username: boolean;
   @Input() users;
-  frr = this.quotat;
+
   public time: any = new Date();
   day: any;
   hour: any;
