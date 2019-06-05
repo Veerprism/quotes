@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import {AppComponent} from './app.component';
 import {ThequotesComponent} from './thequotes/thequotes.component';
 import {FinalquoteComponent} from './finalquote/finalquote.component';
+import{ViewChild} from '@angular/core';
 
 const routes: Routes = [
   {path: 'home', component: AppComponent},
